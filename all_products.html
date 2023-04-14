@@ -22,6 +22,9 @@
     />
     <link rel="manifest" href="images/site.webmanifest" />
     <link rel="stylesheet" href="css\style.css" />
+    
+    <link rel="stylesheet" href="css\all_products.css" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TortikiOtViti</title>
   </head>
@@ -29,81 +32,86 @@
     <header>
       <div class="topnav">
         <h1>Вкусные тортики</h1>
-        <a href="trash.html">Корзина</a>
+
         <a href="contact.html">Контакты</a>
         <a href="about.html">О нас</a>
-        <a class="active" href="all_products.html">Десерты</a>
+        <a class="active" href="all_products.html">Заказать</a>
         <a href="index.html">Главная</a>
       </div>
     </header>
+
     <main>
-      <div class="maincontent">
-        <h2>Тортики</h2>
-        <div class="secondcontent3">
-          <article class="product-item">
-            <img src="images\tovari\1_tort.png" />
-            <div class="product-list">
-              <h3>Маленький тортик</h3>
-              <span class="price">₽ 1999</span>
-              <a href="" class="button">В корзину</a>
+      <div class="container mb-5">
+        <div class="row">
+    
+          <!-- Товары -->
+          <div class="col-md-8">
+            <div class="row" id="products-container">
+    
             </div>
-          </article>
-        </div>
-        <div class="secondcontent3">
-          <article class="product-item">
-            <img src="images\tovari\1_tort.png" />
-            <div class="product-list">
-              <h3>Тортик побольше</h3>
-              <span class="price">₽ 1999</span>
-              <a href="" class="button">В корзину</a>
+          </div>
+    
+          <!-- Корзина -->
+          <div class="col-md-4">
+    
+            <!-- Корзина -->
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Ваш заказ</h4>
+    
+                  <div data-cart-empty class="alert alert-secondary" role="alert">
+                  Корзина пуста
+                </div>
+    
+                <!-- cart-wrapper -->
+                <div class="cart-wrapper">
+    
+                </div>
+                <!-- // cart-wrapper -->
+    
+                <!-- Стоимость заказа -->
+                <div class="cart-total">
+                  <p data-cart-delivery class="none">
+                    <span class="h5">Доставка:</span>
+                    <span class="delivery-cost">250 ₽</span><br>
+                    <span class="small">Бесплатно при заказе от 600 ₽</span>
+                  </p>
+                  <p><span class="h5">Итого:</span>
+                    <span class="total-price">0</span>
+                    <span class="rouble">₽</span></p>
+                </div>
+                <!-- // Стоимость заказа -->
+    
+              </div>
+    
+              <!-- Оформить заказ -->
+              <div id="order-form" class="card-body border-top none">
+                <h5 class="card-title">Оформить заказ</h4>
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Ваш номер телефона">
+                  </div>
+                  <button type="submit" class="button-to-all">Заказать</button>
+                </form>
+              </div>
+              <!-- // Оформить заказ -->
+    
             </div>
-          </article>
-        </div>
-        <div class="secondcontent3">
-          <article class="product-item">
-            <img src="images\tovari\1_tort.png" />
-            <div class="product-list">
-              <h3>Большой тортик</h3>
-              <span class="price">₽ 1999</span>
-              <a href="" class="button">В корзину</a>
-            </div>
-          </article>
-        </div>
-        <div class="secondcontent3">
-          <article class="product-item">
-            <img src="images\tovari\1_tort.png" />
-            <div class="product-list">
-              <h3>Огромный тортик</h3>
-              <span class="price">₽ 1999</span>
-              <a href="" class="button">В корзину</a>
-            </div>
-          </article>
-        </div>
-        <div class="secondcontent3">
-          <article class="product-item">
-            <img src="images\tovari\1_tort.png" />
-            <div class="product-list">
-              <h3>Гигантский тортик</h3>
-              <span class="price">₽ 1999</span>
-              <a href="" class="button">В корзину</a>
-            </div>
-          </article>
-        </div>
-        <div class="secondcontent3">
-          <article class="product-item">
-            <img src="images\tovari\1_tort.png" />
-            <div class="product-list">
-              <h3>Титанический тортик</h3>
-              <span class="price">₽ 1999</span>
-              <a href="" class="button">В корзину</a>
-            </div>
-          </article>
+            <!-- // Корзина -->
+    
+          </div>
+    
         </div>
       </div>
     </main>
+    <script src="./js/renderProducts.js"></script>
+    <script src="./js/calcCartPrice.js"></script>
+    <script src="./js/toggleCartStatus.js"></script>
+    <script src="./js/counter-02.js"></script>
+    <script src="./js/cart-02.js"></script>
 
-    <footer>
-      <p>что-то про автора</p>
+    <footer class="foot">
+      <p>Чупахина Виталина 405 группа СПБГТИ(ТУ) 2023 год</p>
     </footer>
   </body>
 </html>
