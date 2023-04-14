@@ -205,3 +205,8 @@ main {
 .none {
   display: none;
 }
+.foot {
+  height: 3vh;
+  padding-top: 0.5vh;
+  text-align: center;
+}

@@ -95,7 +95,7 @@ h2 {
 }
 .fit-picture-long {
   width: 100%;
-
+  height: 60vh;
   border-radius: 10px;
 }
 iframe {
