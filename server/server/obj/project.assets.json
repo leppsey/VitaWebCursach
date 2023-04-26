@@ -1419,23 +1419,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pc\\.nuget\\packages\\": {},
-    "E:\\visual studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\aspir\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\вита\\VitaWebCursach-master\\server\\server\\server.csproj",
+      "projectUniqueName": "C:\\Users\\aspir\\RiderProjects\\VitaWebCursach\\server\\server\\server.csproj",
       "projectName": "server",
-      "projectPath": "E:\\вита\\VitaWebCursach-master\\server\\server\\server.csproj",
-      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "E:\\вита\\VitaWebCursach-master\\server\\server\\obj\\",
+      "projectPath": "C:\\Users\\aspir\\RiderProjects\\VitaWebCursach\\server\\server\\server.csproj",
+      "packagesPath": "C:\\Users\\aspir\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aspir\\RiderProjects\\VitaWebCursach\\server\\server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\visual studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aspir\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1451,8 +1451,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\вита\\VitaWebCursach-master\\server\\DAL\\DAL.csproj": {
-              "projectPath": "E:\\вита\\VitaWebCursach-master\\server\\DAL\\DAL.csproj"
+            "C:\\Users\\aspir\\RiderProjects\\VitaWebCursach\\server\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\aspir\\RiderProjects\\VitaWebCursach\\server\\DAL\\DAL.csproj"
             }
           }
         }
@@ -1491,7 +1491,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

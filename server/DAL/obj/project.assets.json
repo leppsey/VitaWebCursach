@@ -1352,23 +1352,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pc\\.nuget\\packages\\": {},
-    "E:\\visual studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\aspir\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\вита\\VitaWebCursach-master\\server\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\aspir\\RiderProjects\\VitaWebCursach\\server\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "E:\\вита\\VitaWebCursach-master\\server\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "E:\\вита\\VitaWebCursach-master\\server\\DAL\\obj\\",
+      "projectPath": "C:\\Users\\aspir\\RiderProjects\\VitaWebCursach\\server\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\aspir\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aspir\\RiderProjects\\VitaWebCursach\\server\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\visual studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aspir\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1433,7 +1433,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
