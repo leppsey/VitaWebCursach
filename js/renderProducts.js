@@ -6,21 +6,26 @@ getProducts();
 // Асинхронная функция получения данных из файла products.json
 async function getProducts() {
   // Получаем данные из products.json
-  const response = await fetch("./js/products.json");
+  //const response = await fetch("./js/products.json");
+  const response1 = await fetch("https://localhost:7226/Product");
+  //console.log("result", response);
+  console.log("2", response1);
   // Парсим данные из JSON формата в JS
-  const productsArray = await response.json();
+  const productsArray = await response1.json();
+  console.log("result", productsArray);
   // Запускаем ф-ю рендера (отображения товаров)
   renderProducts(productsArray);
 }
-
 function renderProducts(productsArray) {
   productsArray.forEach(function (item) {
     const productHTML = `<div class="col-md-6">
 						<div class="card mb-4" data-id="${item.id}">
-							<img class="product-img" src="images/tovari/${item.imgSrc}" alt="">
+							<img class="product-img" src="${"data:image/png;base64," + item.image}" alt="">
 							<div class="card-body text-center">
 								<h4 class="item-title">${item.title}</h4>
-								<p><small data-items-in-box class="text-muted">${item.itemsInBox} шт.</small></p>
+								<p><small data-items-in-box class="text-muted">${
+                  item.itemsInBox
+                } шт.</small></p>
 
 								<div class="details-wrapper">
 

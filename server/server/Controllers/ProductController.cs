@@ -28,6 +28,7 @@ namespace server.Controllers
                 dto.Price= product.Price;
                 dto.Weight= product.Weight;
                 dto.Image = System.IO.File.ReadAllBytes("images/" + product.ImageSource);
+                
                 productDtos.Add(dto);
             }
             return productDtos;
