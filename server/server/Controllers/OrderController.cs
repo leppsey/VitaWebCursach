@@ -6,7 +6,7 @@ namespace server.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class OrderController
+    public class OrderController : ControllerBase
     {
         public OrderController(MyContext context)
         {
@@ -18,11 +18,16 @@ namespace server.Controllers
         [HttpPost]
         public void Create([FromBody] AddOrderDTO addOrderDTO)
         {
-            var products = _context.Products.Where(p=>addOrderDTO.ProductIds.Contains(p.Id)).ToList();
+            var productsCount = addOrderDTO.ProductCount.Select(product => new ProductInCart()
+                                           {
+                                               Product = _context.Products.Find(product.Id),
+                                               ProductCount = product.Count,
+                                           })
+                                           .ToList();
             var order = new Order()
             {
-                Products = products,
-                PhoneNumber = addOrderDTO.PhoneNumber
+                ProductsCount = productsCount,
+                PhoneNumber = addOrderDTO.PhoneNumber,
             };
             _context.Orders.Add(order);
             _context.SaveChanges();

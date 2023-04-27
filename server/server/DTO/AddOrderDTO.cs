@@ -1,8 +1,15 @@
 ﻿namespace server.DTO
 {
-    public class AddOrderDTO
+    public record AddOrderDTO
     {
-        public List<ulong> ProductIds { get; set; }
+        public List<ProductCountDTO> ProductCount { get; set; }
         public string PhoneNumber { get; set; }
+    }
+
+
+    public record ProductCountDTO
+    {
+        public ulong Id { get; set; }
+        public ulong Count { get; set; }
     }
 }

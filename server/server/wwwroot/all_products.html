@@ -55,9 +55,9 @@
           <div class="col-md-4">
     
             <!-- Корзина -->
-            <div class="card mb-4">
+            <div class="card mb-4" id="cart">
               <div class="card-body">
-                <h5 class="card-title">Ваш заказ</h4>
+                <h5 class="card-title">Ваш заказ</h5>
     
                   <div data-cart-empty class="alert alert-secondary" role="alert">
                   Корзина пуста
@@ -86,12 +86,12 @@
     
               <!-- Оформить заказ -->
               <div id="order-form" class="card-body border-top none">
-                <h5 class="card-title">Оформить заказ</h4>
-                <form>
+                <h5 class="card-title">Оформить заказ</h5>
+                <form action="javascript:void(0);" onsubmit="PostOrder()">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Ваш номер телефона">
+                    <input id="phone" type="text" class="form-control" placeholder="Ваш номер телефона">
                   </div>
-                  <button type="submit" class="button-to-all">Заказать</button>
+                  <button make-order type="submit" class="button-to-all">Заказать</button>
                 </form>
               </div>
               <!-- // Оформить заказ -->
@@ -109,6 +109,7 @@
     <script src="./js/toggleCartStatus.js"></script>
     <script src="./js/counter-02.js"></script>
     <script src="./js/cart-02.js"></script>
+    <script src="./js/postOrder.js"></script>
 
     <footer class="foot">
       <p>Чупахина Виталина 405 группа СПБГТИ(ТУ) 2023 год</p>

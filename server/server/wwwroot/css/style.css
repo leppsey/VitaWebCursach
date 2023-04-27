@@ -155,7 +155,7 @@ iframe {
   background: #4caf50;
 }
 .button-to-all {
-  background: #cccccc;
+  background: #5cd161;
   color: white;
   text-transform: uppercase;
   border-radius: 10px;
@@ -164,5 +164,5 @@ iframe {
   transition: 0.3s ease-in;
 }
 .button-to-all:hover {
-  background: #4caf50;
+  background: #429646;
 }
