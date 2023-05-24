@@ -16,7 +16,7 @@ namespace server.Controllers
         private MyContext _context { get; }
 
         [HttpPost]
-        public void Create([FromBody] AddOrderDTO addOrderDTO)
+        public async Task<ActionResult<ulong>> Create([FromBody] AddOrderDTO addOrderDTO)
         {
             var productsCount = addOrderDTO.ProductCount.Select(product => new ProductInCart()
                                            {
@@ -31,6 +31,8 @@ namespace server.Controllers
             };
             _context.Orders.Add(order);
             _context.SaveChanges();
+
+            return Ok(order.Id);
         }
     }
 }

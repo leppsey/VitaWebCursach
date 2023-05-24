@@ -13,7 +13,6 @@ window.addEventListener("click", function (event) {
       id: card.dataset.id,
       imgSrc: card.querySelector(".product-img").getAttribute("src"),
       title: card.querySelector(".item-title").innerText,
-      itemsInBox: card.querySelector("[data-items-in-box]").innerText,
       weight: card.querySelector(".price__weight").innerText,
       price: card.querySelector(".price__currency").innerText,
       counter: card.querySelector("[data-counter]").innerText,
@@ -28,7 +27,8 @@ window.addEventListener("click", function (event) {
       const counterElement = itemInCart.querySelector("[data-counter]");
       counterElement.innerText =
         parseInt(counterElement.innerText) + parseInt(productInfo.counter);
-    } else {
+    } 
+    else {
       // Если товара нет в корзине
 
       // Собранные данные подставим в шаблон для товара в корзине
@@ -39,7 +39,7 @@ window.addEventListener("click", function (event) {
 									</div>
 									<div class="cart-item__desc">
 										<div class="cart-item__title">${productInfo.title}</div>
-										<div class="cart-item__weight">${productInfo.itemsInBox} / ${productInfo.weight}</div>
+										<div class="cart-item__weight">${productInfo.weight}</div>
 
 										<!-- cart-item__details -->
 										<div class="cart-item__details">
